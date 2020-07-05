@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Demo</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head> 
+
+<body>
+    <br></br>
+    <h1>Demo Archive</h1>
+    <br></br>
+    <p><a href="{{ url_for('sentiment_logreg') }}">Sentiment Classification with Logistic Regression</a></p>
+    <p>Another Demo</p>
+
+</body>
+
+</html>

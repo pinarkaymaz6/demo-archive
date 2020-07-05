@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sentiment Classification</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <br></br>
+    <h3>Sentiment Classification with Logistic Regression</h3>
+    <div>
+    <textarea id="input_tweet" name="input_tweet" rows="4" cols="50" placeholder="Enter some text here..."></textarea></div>
+    <div><input type="button" id="submit" value="Submit" style="background-color:beige;"></div>
+    
+    <h3 style="margin-top: 50px;">Result</h3>
+    <p id="result"></p>
+</body>
+
+</html>
