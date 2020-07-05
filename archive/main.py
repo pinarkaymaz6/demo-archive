@@ -27,12 +27,12 @@ def sentiment_logreg():
 def get_sentiment_logreg():
     tweet = json.loads(request.data)
     y_hat = predict_tweet(tweet, freqs.item(), theta)
-    confidence = round(float(np.squeeze(y_hat)) * 100, 2)
+    score = round(float(np.squeeze(y_hat)), 4)
     sentiment = 'Negative'
     if y_hat > 0.5:
         sentiment = 'Positive'
 
-    result = f"{sentiment} sentiment (confidence: {confidence}%)"
+    result = f"{sentiment} sentiment (Score: {score})"
     return result
 
 
