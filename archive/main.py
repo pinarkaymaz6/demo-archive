@@ -6,10 +6,10 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-with open('../archive/theta.npy', 'rb') as f:
+with open('theta.npy', 'rb') as f:
     theta = np.load(f)
 
-with open('../archive/freqs.npy', 'rb') as f:
+with open('freqs.npy', 'rb') as f:
     freqs = np.load(f, allow_pickle=True)
 
 

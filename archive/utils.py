@@ -1,9 +1,12 @@
 import re
 import string
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import TweetTokenizer
 import numpy as np
+
+nltk.download('stopwords')
 
 def process_tweet(tweet):
     stemmer = PorterStemmer()
