@@ -1,5 +1,23 @@
 body {
   font-family: "helvetica", sans-serif;
   text-align: center;
-  
+
+}
+
+.text {
+  width : 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.textarea {
+  font-size: medium;
+}
+
+.button {
+  font-size: medium;
+}
+
+.image {
+  width:300px;
 }

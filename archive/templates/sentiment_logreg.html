@@ -8,11 +8,16 @@
 </head>
 
 <body>
-    <br></br>
-    <h3>Sentiment Classification with Logistic Regression</h3>
+
+        <h3>Sentiment Classification with Logistic Regression</h3>
+        
+        <img src="https://news.blr.com/app/uploads/sites/5/2018/09/Customer-Emotion.jpg" class="image" /> 
+    <p class="text">
+    This Logistic Regression model is a sentiment classifier and was trained using <em>twitter_samples</em> dataset which is a public dataset provided by <em>nltk</em> package. Given a piece of text, the model outputs a score. If the resulting score is larger than <em>0.5</em>, the sentiment is positive. If it is less than <em>0.5</em>, the sentiment is negative. 
+    </p>
     <div>
-    <textarea id="input_tweet" name="input_tweet" rows="4" cols="50" placeholder="Enter some text here..."></textarea></div>
-    <div><input type="button" id="submit" value="Submit" style="background-color:beige;"></div>
+    <textarea class="textarea" id="input_tweet" name="input_tweet" rows="4" cols="50" placeholder="Enter some text here..."></textarea></div>
+    <div><input class = "button" type="button" id="submit" value="Submit" style="background-color:beige;"></div>
     
     <h3 style="margin-top: 50px;">Result</h3>
     <p id="result"></p>
