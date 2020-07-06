@@ -9,7 +9,7 @@ Go ahead and clone this repo your to machine
 git clone https://github.com/pinarkaymaz6/demo-archive.git
 ```
 
-### 2. Run it locally 
+### 2. Run locally 
 Running locally is not a mandatory step, but I highly recommend it. It's easier to save and view your changes, since deployment to cloud takes a few minutes.
 - Create a virtual environment and install dependencies
     ```shell
