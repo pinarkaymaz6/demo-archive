@@ -55,3 +55,14 @@ def predict_tweet(tweet, freqs, theta):
     y_pred = sigmoid(np.dot(x, theta))
 
     return y_pred
+
+
+def naive_bayes_predict(tweet, logprior, loglikelihood):
+    word_l = process_tweet(tweet)
+    p = 0
+    p += logprior
+    for word in word_l:
+        if word in loglikelihood:
+            p += loglikelihood[word]
+
+    return p

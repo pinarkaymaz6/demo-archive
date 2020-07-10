@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sentiment Classification</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+        <h3>Sentiment Classification with Naive Bayes</h3>
+        
+        <img src="https://news.blr.com/app/uploads/sites/5/2018/09/Customer-Emotion.jpg" class="image" /> 
+    <p class="text">
+    This Naive Bayes model is a sentiment classifier and was trained using <em>twitter_samples</em> dataset which is a public dataset provided by <em>nltk</em> package. Given a piece of text, the model outputs a score. If the resulting score is larger than <em>0</em>, the sentiment is positive. If it is smaller than <em>0</em>, the sentiment is negative. 
+    </p>
+    <div>
+    <textarea class="textarea" id="input_tweet_nb" name="input_tweet" rows="4" cols="50" placeholder="Enter some text here..."></textarea></div>
+    <div><input class = "button" type="button" id="submit_nb" value="Submit" style="background-color:beige;"></div>
+    
+    <h3 style="margin-top: 50px;">Result</h3>
+    <p id="result_nb"></p>
+</body>
+
+</html>
